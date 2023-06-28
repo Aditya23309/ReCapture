@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Login For Website</title>
+<link rel="icon" href="title.png">
+<link rel="stylesheet" href="style1.css"/>
+<script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('html_element', {
+        'sitekey' : '6Lf3xoMmAAAAAND3GCxCTPOxtNw8FR0M4eCgD2VZ'
+      });
+    };
+  </script>
+
+</head>
+<body>
+    <section>
+<div class="container">
+<div class="main">
+<h2>Login</h2>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note"><p>Note : For this demo use following username and password.</p> <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+<form action="?" method="POST">
+    <div id="html_element"></div>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</section>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async defer>
+  </script>
+</body>
+</html>
